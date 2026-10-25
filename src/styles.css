@@ -1,0 +1,36 @@
+#pc-root {
+	--pc-fg: #4b5563;
+	--pc-track: #d1d5db;
+	--pc-fill: #2c84db;
+	--pc-warn: #ce2029;
+	--pc-bg: rgba(255, 255, 255, 0.92);
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 6px;
+	z-index: 2147483000;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 18px;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 4px 12px;
+	border-radius: 10px;
+	font: 11px/1.2 system-ui, -apple-system, 'Segoe UI', sans-serif;
+	color: var(--pc-fg);
+	background: var(--pc-bg);
+	pointer-events: none;
+}
+@media (prefers-color-scheme: dark) {
+	#pc-root {
+		--pc-fg: #a8a8a7;
+		--pc-track: #3a3a39;
+		--pc-bg: rgba(25, 25, 24, 0.92);
+	}
+}
+.pc-item { display: flex; align-items: center; gap: 8px; flex: 1 1 280px; min-width: 0; }
+.pc-label { white-space: nowrap; }
+.pc-track { flex: 1; min-width: 40px; height: 6px; border-radius: 3px; background: var(--pc-track); overflow: hidden; }
+.pc-fill { height: 100%; background: var(--pc-fill); transition: width 0.3s ease; }
+.pc-fill.pc-warn { background: var(--pc-warn); }
+.pc-pct { min-width: 58px; text-align: right; }
