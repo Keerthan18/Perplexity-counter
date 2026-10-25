@@ -15,7 +15,7 @@ A small browser extension that adds a usage strip to [perplexity.ai](https://www
 
 Works on Chrome, Brave, Edge and other Chromium browsers.
 
-1. Download the latest zip from the [Releases](../../releases) page and extract it.
+1. Download the latest zip from the [Releases](../../releases) page, or directly: [perplexity-counter-v0.2.0.zip](https://github.com/Keerthan18/Perplexity-counter/releases/download/v0.2.0/perplexity-counter-v0.2.0.zip). Then extract it.
 2. Open the extensions page (`chrome://extensions` or `brave://extensions`) and turn on **Developer mode**.
 3. Click **Load unpacked** and select the extracted folder that directly contains `manifest.json`.
 4. Refresh any open perplexity.ai tab.
